@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-// CSS
+import { render } from 'react-dom';
 import './index.css';
 
 function BookList() {
@@ -17,7 +16,7 @@ function BookList() {
 }
 
 function Book() {
-  return(
+  return (
     <article className='book'>
       <Image />
       <Title />
@@ -27,8 +26,8 @@ function Book() {
 }
 
 function Image() {
-  return(
-    <img src='https://images-na.ssl-images-amazon.com/images/I/410hiaPGyCL._SX348_BO1,204,203,200_.jpg'/>
+  return (
+    <img src='https://images-na.ssl-images-amazon.com/images/I/410hiaPGyCL._SX348_BO1,204,203,200_.jpg' />
   );
 }
 
@@ -44,7 +43,7 @@ function Author() {
   );
 }
 
-ReactDOM.render(
+render(
   <BookList />,
-  document.getElementById('root')
+  document.querySelector('#root')
 );
