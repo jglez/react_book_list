@@ -12,20 +12,35 @@ body {
   max-width: 1170px;
   display: grid;
   gap: 2rem;
-  border: solid blue 1px;
 }
 
 .book {
-  border: solid red 1px;
   width: 500px;
   text-align: center;
+  background-color: #fff;
+  border-radius: 1rem;
 }
 
-h1 {
+.book h1 {
   font-size: 1.6rem;
   margin-bottom: 8px;
+  margin-top: 0.5rem;
 }
 
-h2 {
+.book h2 {
   font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: white;
+  background-color: orange;
+  width: 40px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
