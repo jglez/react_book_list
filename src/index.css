@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,16 +11,18 @@ body {
 }
 
 .booklist {
+  width: 90vw;
   max-width: 1170px;
+  margin: 5rem auto;
   display: grid;
   gap: 2rem;
 }
-
+ 
 .book {
-  width: 500px;
   text-align: center;
   background-color: #fff;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
 }
 
 .book h1 {
@@ -36,7 +40,11 @@ p {
   color: white;
   background-color: orange;
   width: 40px;
-}
+  position: relative;
+  top: 25px;
+  left: 1px;
+  padding: 2px 0;
+} 
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
