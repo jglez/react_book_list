@@ -15,41 +15,36 @@ body {
   max-width: 1170px;
   margin: 5rem auto;
   display: grid;
-  gap: 2rem;
+  gap: 2rem; 
 }
- 
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+
 .book {
-  text-align: center;
   background-color: #fff;
   border-radius: 1.5rem;
-  padding: 1rem 2rem;
+  text-align: center;
+  padding: .85rem ;
+}
+
+img {
+  height: 450px;
+  text-align: center;
+  padding: 0;
+  margin-top: 25px;
 }
 
 .book h1 {
-  font-size: 1.6rem;
-  margin-bottom: 8px;
-  margin-top: 0.5rem;
+  margin-top: .4rem;
+  margin-bottom: .5rem;
+  font-size: 1.45rem;
 }
 
 .book h2 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-}
-
-p {
-  color: white;
-  background-color: orange;
-  width: 40px;
-  position: relative;
-  top: 26px;
-  left: 1px;
-  padding: 2px 0;
-  font-weight: bold;
-} 
-
-/* Media Queries */
-@media screen and (min-width: 768px) {
-  .booklist {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  font-size: 1.25rem;
+  margin-bottom: .7rem;
 }
