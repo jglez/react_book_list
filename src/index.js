@@ -1,6 +1,6 @@
-import React from 'react';
-import { render } from 'react-dom';
-import './index.css';
+import React from 'react'
+import { render } from 'react-dom'
+import './index.css'
 
 function BookList() {
   return (
@@ -19,32 +19,14 @@ function Book() {
   return (
     <article className='book'>
       <p>#1</p>
-      <Image />
-      <Title />
-      <Author />
+      <img src='https://images-na.ssl-images-amazon.com/images/I/410hiaPGyCL._SX348_BO1,204,203,200_.jpg' />
+      <h1>Cracking the Coding Interview</h1>
+      <h2>Gayle Mcdowell</h2>
     </article>
-  );
-}
-
-function Image() {
-  return (
-    <img src='https://images-na.ssl-images-amazon.com/images/I/410hiaPGyCL._SX348_BO1,204,203,200_.jpg' />
-  );
-}
-
-function Title() {
-  return (
-    <h1>Cracking the Coding Interview</h1>
   )
-}
-
-function Author() {
-  return (
-    <h2>Gayle Mcdowell</h2>
-  );
 }
 
 render(
   <BookList />,
   document.querySelector('#root')
-);
+)

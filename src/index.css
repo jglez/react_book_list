@@ -41,9 +41,10 @@ p {
   background-color: orange;
   width: 40px;
   position: relative;
-  top: 25px;
+  top: 26px;
   left: 1px;
   padding: 2px 0;
+  font-weight: bold;
 } 
 
 /* Media Queries */
