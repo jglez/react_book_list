@@ -1,11 +1,13 @@
 import React from 'react'
 
 function Book(props) {
+  const { img, title, author } = props
+
   return (
-    <article className="book">
-      <img src={props.img} alt="book cover" />
-      <h1>{props.title}</h1>
-      <h2>{props.author}</h2>
+    <article className='book'>
+      <img src={img} alt='book cover' />
+      <h1>{title}</h1>
+      <h2>{author}</h2>
     </article>
   )
 }
