@@ -1,9 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
 import './index.css'
-import BookList from './components/BookList'
+import App from './App'
 
 render(
-  <BookList />,
+  <App />,
   document.querySelector('#root')
 )
